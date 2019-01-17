@@ -1,0 +1,8 @@
+{
+  "name": "todo-list-function",
+  "description": "This function will list items in the todo list",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::315358030427:role/todo-list-function_lambda_function",
+  "environment": {}
+}

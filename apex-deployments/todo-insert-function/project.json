@@ -1,0 +1,8 @@
+{
+  "name": "todo-insert-function",
+  "description": "This function will insert todo items into the table",
+  "memory": 128,
+  "timeout": 5,
+  "role": "arn:aws:iam::315358030427:role/todo-insert-function_lambda_function",
+  "environment": {}
+}
