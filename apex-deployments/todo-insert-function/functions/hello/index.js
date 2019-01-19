@@ -3,13 +3,13 @@ console.log('starting function')
 const AWS = require('aws-sdk');
 const docClient = new AWS.DynamoDB.DocumentClient({region: 'eu-west-1'});
 
-exports.handle = function(e, ctx, cb) {
+exports.handle = function(event, ctx, cb) {
 
   //Will need to take incoming parameters TODO
   var params = {
     Item: {
       date: Date.now(),
-      message: "Buy Milk!",
+      message: event.body.message,
       status: false
     },
     TableName: 'todo'
@@ -23,5 +23,4 @@ exports.handle = function(e, ctx, cb) {
       cb(null,data);
     }
   });
-
 }
